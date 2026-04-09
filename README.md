@@ -27,7 +27,8 @@
 - `nodePort: 30080` — доступ к веб-интерфейсу
 
 ### Скриншоты
-kubectl get pods 
+kubectl get pods
+
 <img width="632" height="90" alt="image" src="https://github.com/user-attachments/assets/2ad243c9-3762-4f83-b516-bf0d65e3e432" />
 
 
