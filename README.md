@@ -29,8 +29,8 @@
 ### Скриншоты
 ![kubectl get pods](img/kubectl_get_pods.png)
 ![kubectl get services](img/kubectl_get_services.png)
-![Spark Web UI](<img width="1206" height="602" alt="image" src="https://github.com/user-attachments/assets/57f48bf3-948c-4d99-86f3-6c9601364d87" />
-)
+![Spark Web UI] <img width="1206" height="602" alt="image" src="https://github.com/user-attachments/assets/b4aac8b4-b2a8-4ec5-96db-3f37f1790e00" />
+
 
 ### Выводы
 - Kubernetes упрощает развёртывание распределённых систем (Spark кластер).
