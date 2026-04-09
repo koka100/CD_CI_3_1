@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spark-master
+  labels:
+    app: spark
+    component: master
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spark
+      component: master
+  template:
+    metadata:
+      labels:
+        app: spark
+        component: master
+    spec:
+      containers:
+      - name: spark-master
+        image: apache/spark:3.5.0
+        command:
+          - /opt/spark/bin/spark-class
+          - org.apache.spark.deploy.master.Master
+        args:
+          - --ip
+          - 0.0.0.0
+          - --port
+          - "7077"
+          - --webui-port
+          - "8080"
+        ports:
+        - containerPort: 7077
+          name: spark-rpc
+        - containerPort: 8080
+          name: spark-web
+        env:
+          - name: SPARK_DAEMON_MEMORY
+            value: "1073741824"
+        resources:
+          limits:
+            memory: "2Gi"
+            cpu: "1000m"
+          requests:
+            memory: "1Gi"
+            cpu: "500m"
