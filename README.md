@@ -27,11 +27,13 @@
 - `nodePort: 30080` — доступ к веб-интерфейсу
 
 ### Скриншоты
-kubectl get pods <img width="632" height="90" alt="image" src="https://github.com/user-attachments/assets/2ad243c9-3762-4f83-b516-bf0d65e3e432" />
+kubectl get pods 
+<img width="632" height="90" alt="image" src="https://github.com/user-attachments/assets/2ad243c9-3762-4f83-b516-bf0d65e3e432" />
 
 
 
-kubectl get services <img width="717" height="167" alt="image" src="https://github.com/user-attachments/assets/f41fa980-84e2-4af3-8232-b63f90eff557" />
+kubectl get services
+<img width="717" height="167" alt="image" src="https://github.com/user-attachments/assets/f41fa980-84e2-4af3-8232-b63f90eff557" />
 
 
 Spark Web UI <img width="1206" height="602" alt="image" src="https://github.com/user-attachments/assets/b4aac8b4-b2a8-4ec5-96db-3f37f1790e00" />
